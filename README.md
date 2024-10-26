@@ -22,21 +22,21 @@
 #include "Matrix.h"
 
 int main() {
-  Matrix<int, 3, 3> mat1{1, 2, 3,
-                         4, 5, 6,
-                         7, 8, 9};
+     Matrix<int, 3, 3> mat1{1, 2, 3,
+                            4, 5, 6,
+                            7, 8, 9};
 
-	Matrix<int, 3, 3> mat2{1, 2, 2,
-						             2, 2, 2,
-						             3, 5, 1};
+     Matrix<int, 3, 3> mat2{1, 2, 2,
+                            2, 2, 2,
+                            3, 5, 1};
 
-	Matrix<int, 3, 3> result = mat1 + mat2;
-	std::cout << "Сумма матриц:\n" << result << std::endl;
-	
-	Matrix<int, 3, 3> inverse = GetInversed(mat2);
-	std::cout << "Обратная матрица:\n" << inverse << std::endl;
-	
-	return 0;
+     Matrix<int, 3, 3> result = mat1 + mat2;
+     std::cout << "Сумма матриц:\n" << result << std::endl;
+
+     Matrix<int, 3, 3> inverse = GetInversed(mat2);
+     std::cout << "Обратная матрица:\n" << inverse << std::endl;
+
+     return 0;
 }
 ```
 
